@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+    color: #282828;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container_intro_title{
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+}
+.intro {
+    background: url("img/photo1.jpg") no-repeat fixed center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.intro_title{
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 75px;
+    letter-spacing: 2px;
+    margin: 0;
+
+    padding: 0;
+    border: 0;
+
+}
+
+.circle_resize{
+
+    margin: 2em 0 1em 0;
+    padding: 0;
+}
+.fa-play-circle{
+    color: #7f84a1;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+
+
+}
+.circle_resize:hover{
+    transform: scale(1.5);
+}
+@media (min-width: 1800px) {
+    .fa-play-circle{
+        transform: scale(1.5);
+    }
+}
+
+.btn_intro{
+    height: 50px;
+    width: 190px;
+    display: inline-block;
+    border-radius: 5px;
+    background: #ff6d6d;
+    color: white;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+
+.btn_intro:hover {
+    background-color: #8286a3;
+
+}
+.text2{
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 75px;
+
+
+
+}
+/*************************************************SECOND PAGE**********************/
+.second_p{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*flex-flow: column nowrap;*/
+    /*justify-content: center;*/
+
+}
+.square{
+    width: 90vh;
+    height: 100%;
+    /*max-width: 500px;*/
+    background-color: #ececec;
+    position: relative;
+    left:0;
+    /*position: absolute;*/
+}
+.triangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 90vh 90vh;
+    border-color: transparent transparent #fb8686
+}
+@media (max-width: 576px) {
+    .square{display: none;}
+    .triangle {
+        display: none ; } }
+
+.container21{
+    width: 100%;
+    max-width: 595px;
+    padding-left: 100px;
+    /*margin: 0 auto;*/
+    text-align: left;
+}
+.newDesign{
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 50px;
+    color: #ff6d6d;
+    font-weight: 500;}
+
+.thereIs{
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    color: #282828;
+
+    font-weight: 500;}
+
+@media (max-width: 576px) {
+    .thereIs{
+        font-size: 20px;
+    }
+}
+.colorText{
+    color: #ff6d6d;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    font-weight: 500;
+}
+.grayPara1{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #282828;
+    font-weight: 500;
+    padding-top: 50px;
+}
+.grayPara2{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #282828;
+    font-weight: 500;
+    padding-top: 40px;
+}
+
+
+/****************************THIRD PAGE*********************************/
+
+.third_p {
+    background: url("img/photo43.jpg") no-repeat fixed center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    text-align: center; }
+.firstRow {
+
+    justify-content: space-between; }
+
+.thirdPage__title {
+    padding-top: 130px; }
+@media (max-width: 576px) {
+    .thirdPage__title {
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px; } }
+    .newFeatures {
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 50px;
+    color: #ff6d6d;
+    font-family: "Exo", sans-serif;
+    font-weight: 500; }
+    .someAwesome {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    color: #282828;
+    font-family: "Exo", sans-serif;
+    font-weight: 500; }
+@media (max-width: 768px) {
+    .someAwesome {
+        font-size: 30px; } }
+
+
+ .secondRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 80px; }
+@media (max-width: 576px) {
+   .secondRow {
+        flex-direction: column; } }
+   .feature {
+    flex-basis: 30%; }
+    .feature__title {
+    padding-top: 20px;
+    font-size: 22px;
+    font-family: "Exo", sans-serif;
+    font-weight: 500; }
+    .feature__text {
+    opacity: 0.66;
+    padding-top: 10px; }
+@media (max-width: 768px) {
+    .feature {
+        width: 60%;
+        align-self: center;
+        padding-top: 20px;
+    }
+}
+/***********************************FORTH PAGE********************************/
+.forthRow{
+    display: flex;
+    flex-direction: row; }
+@media (max-width: 1000px) {
+    .forthRow {
+        flex-direction: column-reverse; } }
+ .imMacbook {
+    padding-top: 100px; }
+@media (max-width: 768px) {
+   .imMacbook img {
+        width: 70%;
+        margin: 0 auto; } }
+
+.newDesign2 {
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 50px;
+    color: #ff6d6d;
+    font-family: "Exo", sans-serif;
+    font-weight: 500; }
+
+.responsive {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    color: #282828;
+    font-family: "Exo", sans-serif;
+    font-weight: 500; }
+@media (max-width: 576px) {
+.responsive {
+        font-size: 30px; } }
+
+.colorText2 {
+    color: #ff6d6d;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    font-family: "Exo", sans-serif;
+    font-weight: 500; }
+
+.text4 {
+    opacity: 0.66;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #282828;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    padding-top: 50px; }
+
+.container4 {
+    padding-top: 90px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 90px;
+    z-index: 10;
+    background-color: white;
+    height: 100%; }
+@media (min-width: 600px) {
+    .container4 {
+        margin: 0 10% 0 0; } }
+@media (max-width: 1000px) {
+   .container4 {
+        margin: 0;
+        padding-bottom: 30px; } }
+@media (max-width: 576px) {
+.container4 {
+        padding-left: 30px; } }
+
+.fifth_p{
+    background-color: black;
+    background-image: url("img/photo6.png");
+    background-blend-mode:screen;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+
+}
+@media (min-width: 1000px) {
+    body .logo img {
+        margin: 10px 50px; }
+}
